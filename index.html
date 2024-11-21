@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/league.css">
+		
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/zenburn.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2 style="margin: 0px">Ops -> DevOps -> Platform Engineering</h2>
+					<h4>Evolución de la operativa en infraestructura</h4>
+					<small style="margin-top: 2em;">Asturias Software Crafters Noviembre 2024 | Ramiro Alvarez</small>
+				</section>
+				<section>
+					<h2>¿Quién soy?</h2>
+					<ul>
+						<li>Platform Engineer Architect</li>
+						<li><strong><a href="https://empathy.co/">Empathy.co</a></strong>: AI Search</li>
+						<li><strong><a href="https://resiz.es/">Resizes</a></strong>: build Internal Developer Platforms </li>
+						<li><strong>More</strong>: 28 certs, Kubestronaut, FinOps Certified Engineer, Speaker </li>
+					</ul>
+					<small style="margin-top: 1em;">Ramiro Alvarez Fernandez</small>
+				</section>
+				
+				<section> 
+					<h2>Agenda</h2>
+					<ul>
+						<li>¿Ops?</li>
+						<li>¿Dev-Ops?</li>
+						<li>¿Platform Engineering?</li>
+						<li>Evolución</li>
+						<li>¿En qué estado estoy?</li>
+						<li>¿Implantación en mi organización?</li>
+						<li>Recomendaciones</li>
+						<li>Conclusiones</li>
+						<li>Q&A</li>
+				</section>
+				<section>
+					<h2>¿Ops?</h2>
+					<ul>
+						<li>Procesos manuales</li>
+						<li>Hacer tareas</li>
+						<li>Equipo Dev y equipo Ops separados</li>
+						<li>Reactivos, no proactivos</li>
+					</ul>
+				</section>
+				<section>
+					<h2>¿Ops?</h2>
+					<img src="./img/ops.jpeg" alt="Ops" height="350px">
+				</section>
+				<section>
+					<h2>¿Ops?</h2>
+					<ul>
+						<li>Despliegues infinitos</li>
+						<li>Demasiada burocracia</li>
+						<li>Sin red de seguridad</li>
+						<li>Despliegues en producción complejos</li>
+						<li>Proyectos que empezaron hace años</li>
+					</ul>
+					
+					<small style="margin-top: em;">Problemas</small>
+				</section>
+				<section>
+					<h2>¿Dev-Ops?</h2>
+					<ul>
+						<li>Construir sistemas</li>
+						<li>Code first</li>
+						<li>Dev y Ops en el mismo equipo</li>
+						<li>Automatizar todo: DRY</li>
+						<li>Startups</li>
+					</ul>
+				</section>
+				<section>
+					<h2>¿Dev-Ops?</h2>
+					<img src="./img/devops.png" alt="DevOps" height="350px">
+				</section>
+				<section>
+					<h2>¿Dev-Ops?</h2>
+					<img src="./img/DevopsTools.jpeg" alt="DevOps" height="350px">
+				</section>
+				<section>
+					<h2>¿Dev-Ops?</h2>
+					<ul>
+						<li>Demasiado ownership</li>
+						<li>Rol de bombero</li>
+						<li>Los equipos siguen teniendo dependencias</li>
+					</ul>
+					<small>Problemas</small>
+				</section>
+				<section>
+					<h2>¿Platform Engineering?</h2>
+					<ul>
+						<li>Self-service Platform</li>
+						<li>Mayor productividad y autonomía</li>
+						<li>Ownership más definido</li>
+						<li>Aceleración del SDLC</li>
+						<li>Consistencia en seguridad y governance</li>
+						<li>Scale-up</li>
+					</ul>
+				</section>
+				<section>
+					<h2>¿Platform Engineering?</h2>
+					<img src="./img/platformengineering.png" alt="PlatformEngineering" height="350px">
+				</section>
+				<section>
+					<h2>¿Platform Engineering?</h2>
+					<img src="./img/PlatformEngineeringTools.jpg" alt="PlatformEngineering" height="500px">
+				</section>
+				<section>
+					<h2>¿Platform Engineering?</h2>
+					Problemas
+					<ul>
+						<li>Complejidad</li>
+						<li>Gran inversión</li>
+						<li>Posible efecto caja negra</li>
+						<li>Complejidad para medir impacto directo</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Evolución</h2>
+					<img src="./img/evolution.jpg" alt="PlatformEngineering" height="500px">
+				</section>
+				<section>
+					<h2>Evolución</h2>
+					<ul>
+						<li>1. Foco en CI</li> (OPS)
+						<li>2. Infrastructura como código</li> (DevOps)
+						<li>3. Observabilidad</li>
+						<li>4. </li>
+					</ul>
+				</section>
+				<section>
+					<h2>¿En qué estado estoy?</h2>
+					<img src="./img/form.png" alt="Formulario" height="400px">
+				</section> 
+				<section>
+					<h2>¿En qué estado estoy?</h2>
+					<table>
+						<thead><tr>
+							<th>Sí</th>
+							<th>Nivel de madurez</th>
+							<th>Oportunidades</th>							
+						</tr></thead>
+						<tbody><tr>
+							<td>4 o más</td>
+							<td>Bajo</td>
+							<td>Adoptar Platform Engineering</td>		
+						</tr><tr>
+							<td>3</td>
+							<td>Medio</td>
+							<td>En el camino</td>
+						</tr><tr>
+							<td>1 o 2</td>
+							<td>Elevado</td>
+							<td>Plena adopción de Platform Engineering</td>	
+						</tr>
+					</tbody>
+					</table>
+				</section> 
+				<section>
+					<h2>¿Implantación en mi organización?</h2>
+					<ul>
+						<li>Eficiencia operativa</li>
+						<li>Reducción de costos</li>
+						<li>Mejora de la calidad de Software</li>
+						<li>Cultura de innovación y aprendizaje</li>
+						<li>Beneficios competitivos</li>
+						<li>Gestión de riesgos</li>
+						<li>Métricas y rendimiento</li>
+						<li>Atracción y retención de talento</li>
+					</ul>
+					<small  style="margin-top: 1em;">Listado de excusas para convencer a tu CTO de evolucionar a DevOps</small> 
+				</section>
+				<section>
+					<h2>¿Implantación en mi organización?</h2>
+					<ul>
+						<li>Estandarización y consistencia</li>
+						<li>Aumento de la productividad</li>
+						<li>Mejora de la seguridad</li>
+						<li>Aceleración de la innovación</li>
+						<li>Escalabilidad y flexibilidad</li>
+						<li>Gobernanza y cumplimiento</li>
+						<li>Mejora de la colaboración</li>
+					</ul>
+					<small  style="margin-top: 1em;">Listado de excusas para convencer a tu CTO de implantar Platform Engineering</small> 
+					
+				</section>
+				<section>
+					<h2>Desafíos</h2>
+					<ul>
+						<li>Número de desarrolladores</li>
+						<li>Buy vs Build</li>
+						<li>Expertise de los trabajadores</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Recomendaciones</h2>
+					<ul>
+						<li>Automatizar</li>
+						<li>Usar herramientas Cloud Native</li>
+						<li>Adoptar nuevas prácticas y features en nuevos proyectos</li>
+						<li>Sesiones educativas</li>
+						<li>Poner guardaraíles</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Conclusiones</h2>
+					<ul>
+						<li>Adopción cultural en la organización</li>
+						<li>Balancear tiempo, conocimiento y costes</li>
+					</ul>
+				</section>
+        		<section>
+					<h2>Q&A</h2>
+					<img src="img/slidesqr.png" alt="CloudFinOps" height="500px">
+				</section>
+				<section>
+					<h2>Gracias</h2>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+        history: true,
+        controls: true,  
+        width: 1200,
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        slideNumber: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
